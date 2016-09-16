@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/main_background"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+    		android:id="@+id/main_tab"
+    		android:background="#fafafa"
+    		android:orientation="horizontal"
+    		android:layout_width="fill_parent"
+    		android:layout_height="58dp"
+    		android:gravity="center_vertical"
+    		android:layout_gravity="bottom"
+    		android:layout_alignParentBottom="true">
+
+    		<Button 
+    			android:text="@string/audio_text"
+    			style="@style/main_tab_bottom" 
+    			android:drawableTop="@drawable/tab_audio"
+    			android:id="@+id/audio"
+    			android:paddingBottom="@dimen/audio_bottom"
+    			android:background="#fafafa"
+    			android:typeface="@string/defaultTypeFace"
+    			/>
+
+    		<Button 
+    			android:text="@string/video_text"
+    			android:drawableTop="@drawable/tab_video"
+    			android:id="@+id/video"
+    			android:paddingBottom="@dimen/video_bottom"
+    			style="@style/main_tab_bottom"
+    			android:background="#fafafa"
+    			android:typeface="@string/defaultTypeFace"
+    		 />	
+
+    		    
+  
+    	</LinearLayout>
+    	
+        <View
+            android:layout_above="@id/main_tab"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#e1e1e1" />
+
+       
+        <LinearLayout
+            
+            android:id="@+id/Container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/main_tab" 
+            android:orientation="vertical">
+        </LinearLayout>
+        	
+
+    </RelativeLayout>
+
+</LinearLayout>

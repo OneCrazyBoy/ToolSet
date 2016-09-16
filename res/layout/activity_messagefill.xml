@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+        <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <LinearLayout
+    		android:id="@+id/main_tab"
+    		android:background="#fafafa"
+    		android:orientation="horizontal"
+    		android:layout_width="fill_parent"
+    		android:layout_height="58dp"
+    		android:gravity="top"
+    		android:layout_gravity="top"
+    		android:layout_alignParentTop="true">
+    		<Button 
+    			android:text="简单填充"
+    			style="@style/NCTitleText" 
+    			android:layout_weight="1"
+    			android:id="@+id/simple_button"
+    			android:layout_gravity="top"
+    			android:paddingTop="2dip"
+    			android:background="#fafafa"
+    			android:typeface="@string/defaultTypeFace"
+    			/>
+
+    		<Button 
+    			android:text="个性填充"
+    			android:layout_weight="1"
+    			android:id="@+id/presonal_button"
+    			android:layout_gravity="top"
+    			android:paddingTop="2dip"
+    			android:paddingBottom="2dip"
+    			style="@style/NCTitleText"
+    			android:background="#fafafa"
+    			android:typeface="@string/defaultTypeFace"
+    		 />	
+    	</LinearLayout>
+    	
+        <View
+            android:layout_below="@id/main_tab"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#e1e1e1" />
+
+       
+        <LinearLayout
+            
+            android:id="@+id/Container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/main_tab"
+            android:orientation="vertical">
+        </LinearLayout>        	
+    </RelativeLayout>
+
+</LinearLayout>

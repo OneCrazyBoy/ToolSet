@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="audio_bottom">2dip</dimen>
+    <dimen name="video_bottom">2dip</dimen>
+    <dimen name="bottom_tab_padding_drawable">2.0dip</dimen>
+    <dimen name="bottom_tab_padding_up">5.0dip</dimen>
+    <dimen name="viewGroup_top">-40dip</dimen>
+    <dimen name="listheight">74dp</dimen>
+    <dimen name="lsit_item_bottom">4dip</dimen>
+	<dimen name="lsit_item_top">4dip</dimen>
+	<dimen name="lsit_item_left">6dip</dimen>
+	<dimen name="tv_tips01_size">16sp</dimen>
+	<dimen name="tv_tips02size">11sp</dimen>
+	<dimen name="listtextviewleft">12dp</dimen>
+
+</resources>

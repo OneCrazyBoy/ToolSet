@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="morefragmentBG">#f6f6f6</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green">#009df6</color>
+    <color name="morefragmentBG_pressed">#e1e1e1</color>
+    <color name="gray">#777777</color>
+	<color name="main_background">#fff0f0f0</color>
+	<color name="bt_gray">#777777</color>
+	<color name="bt_bule">#008bd6</color>
+	<color name="exhibitors_background">#fff0f0f0</color>
+	<color name="light_gray">#EEEEEE</color>
+	<color name="tv_tips02color">#777777</color>
+	<color name="listbackground">#f6f6f6</color>
+	<color name="listtextviewcolor">#222222</color>
+    
+</resources>

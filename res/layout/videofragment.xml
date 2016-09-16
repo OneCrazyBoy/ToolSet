@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/light_gray" >
+
+  <RelativeLayout style="@style/NCTitleRL" >  
+
+	    <TextView 
+	        android:textSize="18dp"
+	        android:textColor="#008bd6"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+            android:layout_marginLeft="12dp"
+	        android:layout_centerVertical="true"
+	        android:text="视频兼容性测试"
+            android:typeface="@string/defaultTypeFace" />
+	    
+ 
+       <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#e1e1e1" />
+ 
+	</RelativeLayout>
+	
+    
+	
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+       
+
+        <SurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp" >
+        </SurfaceView>
+        
+          <!--      <VideoView
+            android:id="@+id/surfaceView"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp" >
+        </VideoView>-->
+        
+        
+
+        <LinearLayout
+            android:id="@+id/viewGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/surfaceView"
+            android:layout_marginTop="@dimen/viewGroup_top"
+            android:gravity="center"
+            android:orientation="horizontal"  >
+        </LinearLayout>  
+        
+        <LinearLayout 
+             android:id="@+id/showing"
+            android:layout_width="fill_parent"
+            android:layout_height="28dp"
+            android:layout_below="@id/surfaceView"
+            android:layout_marginTop="-25dip"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal" 
+            android:background="#ccffffff"
+            >
+            <TextView android:id="@+id/showingtv1"
+                android:layout_width="46dp"
+                android:layout_height="16dp"
+                android:text="正在测试"
+                android:textSize="10dp"
+                android:typeface="@string/defaultTypeFace"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/text_style"
+                android:textColor="#ffffff"
+                android:gravity="center"
+          />
+            
+             <TextView android:id="@+id/showingtv2"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:text=""
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:typeface="@string/defaultTypeFace"
+                android:textColor="#333333"
+                />
+        </LinearLayout>
+        
+         <LinearLayout
+             android:id="@+id/fragmentContainer"
+            android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             android:layout_below="@id/surfaceView" >
+             
+              <ListView
+                 android:id="@+id/list02_view"
+                 android:layout_width="fill_parent"
+                 android:layout_height="154dp"
+                 android:layout_weight="1.80"
+                 android:background="@android:color/white" >
+             </ListView>
+             <LinearLayout
+	android:orientation="horizontal"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_alignParentBottom="true"
+	android:gravity="center_horizontal">
+
+</LinearLayout>	
+
+              <LinearLayout
+    		android:id="@+id/tab"
+    		android:background="#fafafa"
+    		android:orientation="horizontal"
+    		android:layout_width="fill_parent"
+    		android:layout_below="@id/list02_view"
+    		android:layout_height="58dp"
+    		android:gravity="center_vertical"
+    		android:layout_gravity="bottom"
+    		android:layout_alignParentBottom="true">
+
+    		<Button 
+    			android:text="开始"
+    			style="@style/main_tab_bottom" 
+    			android:id="@+id/btn_test"
+                android:layout_height="fill_parent"
+    			android:paddingBottom="@dimen/audio_bottom"
+    			android:textColor="#ffffff"
+    			android:background="@drawable/button_selector"
+    			android:gravity="center"
+    			android:typeface="@string/defaultTypeFace"
+    			/>
+    		   		       <View
+        android:layout_alignParentBottom="true"
+        android:layout_height="fill_parent"
+        android:layout_width="1dip"
+        android:background="#e1e1e1" />
+    		
+
+    		<Button 
+    			android:text="停止"
+    			android:id="@+id/btn_stop"
+    			android:layout_height="fill_parent"
+    			android:paddingBottom="@dimen/video_bottom"
+    			android:textColor="#ffffff"
+    			android:background="@drawable/button_selector"
+    			style="@style/main_tab_bottom"
+    			android:gravity="center"
+    			android:typeface="@string/defaultTypeFace"
+    		 />	
+
+    	</LinearLayout>
+
+       <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#e1e1e1" />
+                    	      <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal" 
+            android:background="#ccffffff"
+            >
+    		</LinearLayout>
+    		       <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#e1e1e1" />
+    		       
+        </LinearLayout> 
+    </RelativeLayout>
+       		 
+</LinearLayout>

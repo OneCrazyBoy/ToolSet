@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/listheight"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/lsit_item_bottom" 
+    android:paddingTop="@dimen/lsit_item_top"     
+    android:paddingLeft="@dimen/lsit_item_left" 
+    android:descendantFocusability="blocksDescendants"
+    android:background="@color/listbackground"
+ >
+
+
+    <TextView
+        android:id="@+id/tv_tips01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tv_tips01_size"
+        android:paddingLeft = "@dimen/listtextviewleft"
+        android:textColor="@color/listtextviewcolor"
+        android:typeface="@string/defaultTypeFace"
+      />
+        <TextView
+        android:id="@+id/tv_tips02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tips01"
+        android:paddingLeft = "@dimen/listtextviewleft"
+        android:textColor="@color/tv_tips02color"
+        android:typeface="@string/defaultTypeFace"
+        android:textSize="@dimen/tv_tips02size"
+       />
+        
+
+    
+
+</RelativeLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+
+    >
+
+          <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:layout_weight="1.5" > 
+       <TextView android:layout_width="fill_parent"  
+         android:id="@+id/TextView"   
+         android:background="#ffff00"
+         android:layout_marginLeft="2dp"
+         android:layout_marginRight="2dp"
+         android:layout_marginTop="10dp"
+         android:lineSpacingExtra="5dp"
+         android:typeface="@string/defaultTypeFace"		
+    	 android:textSize="16sp"
+         android:textColor="#777777"
+         android:layout_height="wrap_content" 
+         android:text="@string/hello" /> 
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="12dip"
+            android:background="#fafafa"
+             />
+                   <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#e1e1e1" />
+
+    		     		<Button 
+    			android:text="执行显示"
+    			android:id="@+id/text_display"
+    			android:layout_height="140dp"
+    			android:layout_width="fill_parent"
+    			android:paddingBottom="@dimen/video_bottom"
+     			android:textSize="18sp"
+                android:textColor="#777777"
+                android:background="#ffffff"
+                android:gravity="center"
+    			android:typeface="@string/defaultTypeFace"
+    			android:clickable="false"
+    		 />	
+       <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#e1e1e1" 
+        />
+               <View
+            android:layout_width="fill_parent"
+            android:layout_height="12dip"
+            android:background="#fafafa"
+             />
+         
+                           <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"   > 
+
+
+
+              <LinearLayout
+    		android:id="@+id/tab"
+    		android:background="#fafafa"
+    		android:orientation="horizontal"
+    		android:layout_width="fill_parent"
+    		android:layout_height="80dp"
+    		android:gravity="center_vertical"
+    		android:layout_gravity="bottom">
+
+    		<Button 
+    			android:text="查看最新结果txt"
+     			android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:background="@drawable/button_selector"
+                android:layout_weight="1"
+                android:gravity="center" 
+    			android:id="@+id/btn_result"
+                android:layout_height="fill_parent"
+                android:layout_width="100dp"
+    			android:paddingBottom="@dimen/audio_bottom"
+    			android:typeface="@string/defaultTypeFace"
+    			/>
+    		   		       <View
+        android:layout_height="fill_parent"
+        android:layout_width="1dip"
+        android:background="#e1e1e1" />
+    		
+    		     		<Button 
+    			android:text="查看当前所有文件"
+     			android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:background="@drawable/button_selector"
+                android:layout_weight="1"
+                android:gravity="center"
+    			android:id="@+id/btn_findallfiles"
+                android:layout_height="fill_parent"
+                android:layout_width="100dp"
+    			android:paddingBottom="@dimen/audio_bottom"
+    			android:typeface="@string/defaultTypeFace"
+    			/>
+
+    	</LinearLayout>
+
+       <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#e1e1e1" />
+        <LinearLayout
+                android:textColor="#ffffff"
+                android:background="#009df6"
+    		android:orientation="horizontal"
+    		android:layout_width="fill_parent"
+    		android:layout_height="80dp"
+    		android:gravity="center_vertical"
+    		android:layout_gravity="bottom">
+
+    		<Button 
+    			android:text="清理前测试开始"
+     			android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:background="@drawable/button_selector"
+                android:layout_weight="1"
+                android:gravity="center"
+    			android:id="@+id/button_start"
+                android:layout_height="fill_parent"
+                android:layout_width="100dp"
+    			android:paddingBottom="@dimen/audio_bottom"
+    			android:typeface="@string/defaultTypeFace"
+    			/>
+    		   		       <View
+        android:layout_height="fill_parent"
+        android:layout_width="1dip"
+        android:background="#e1e1e1" />
+    		
+
+    		<Button 
+    			android:text="记录当前所有文件"
+    			android:id="@+id/btn_file"
+    			android:layout_height="fill_parent"
+    			android:layout_width="100dp"
+    			android:paddingBottom="@dimen/video_bottom"
+     			android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:background="@drawable/button_selector"
+                android:layout_weight="1"
+                android:gravity="center"
+    			android:typeface="@string/defaultTypeFace"
+    		 />	
+    		 	 
+    		 </LinearLayout>
+              <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#e1e1e1" />
+    	</LinearLayout>
+</LinearLayout>
+</LinearLayout>
